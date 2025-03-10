@@ -1,52 +1,54 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Oswald", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;
-    color: white;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  color: white;
 }
 
-#page{
-    background: radial-gradient(142% 91% at 83% 7%, #041313FF 1%,#FF000000 99% );
-    background: radial-gradient(142% 91% at 152% 84%, #1b4e3eff 0%, #070415FF 100% );
-    height: 100vh;
-  }
-
-#page > .container{
-    position: relative;
-    width: 100%;
-    min-height: 100%;
-    padding: 1rem 5em;
-    overflow: hidden;
-  }
-
-.container > nav{
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    height: 100px;
-    line-height: 100px;
-    z-index: 1111;
+#page {
+  background: radial-gradient(142% 91% at 83% 7%, #041313FF 1%, #FF000000 99%);
+  background: radial-gradient(142% 91% at 152% 84%, #1b4e3eff 0%, #070415FF 100%);
+  height: 100%;
+  width: 100%
 }
 
-nav > .logo{
-    height: 100%;
+#page>.container {
+  position: relative;
+  width: 100%;
+  min-height: 100%;
+  padding: 1rem 5em;
+  overflow: hidden;
 }
 
-.logo > .image{
+.container>nav {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+  line-height: 100px;
+  z-index: 1111;
+}
+
+nav>.logo {
+  height: 100%;
+}
+
+.logo>.image {
   height: inherit;
   filter: invert(1);
 }
 
-ul{
+ul {
   display: flex;
 }
 
-ul > li{
+ul>li {
   list-style: none;
   margin: 0 20px;
   display: block;
@@ -56,21 +58,22 @@ ul > li{
   text-wrap: nowrap;
 }
 
-ul > li:hover, .options > i:hover {
+ul>li:hover,
+.options>i:hover {
   color: rgba(92, 243, 192, 0.626);
   cursor: pointer;
 }
 
-.options{
- font-size: 1.5rem;
+.options {
+  font-size: 1.5rem;
 
 }
 
-.options > i{
+.options>i {
   margin: 0 10px;
 }
 
-.wrapper{
+.wrapper {
   position: relative;
   height: inherit;
   width: 100%;
@@ -78,21 +81,21 @@ ul > li:hover, .options > i:hover {
   padding: 2em;
 }
 
-.wrapper > .cols{
-  width : 50%;
+.wrapper>.cols {
+  width: 50%;
   height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.wrapper > .cols  title{
+.wrapper>.cols title {
   font-size: 6em;
   font-weight: 900;
   text-wrap: nowrap;
 }
 
-.wrapper > .cols .desc{
+.wrapper>.cols .desc {
   margin-top: 0.5em;
   font-size: 1.1rem;
   font-weight: 300;
@@ -100,7 +103,7 @@ ul > li:hover, .options > i:hover {
 
 }
 
-.wrapper > .cols .desc:hover{
+.wrapper>.cols .desc:hover {
   color: rgba(92, 243, 192, 0.626);
   cursor: pointer;
 }
@@ -111,12 +114,12 @@ span {
 
 }
 
-.cols > span .price{
+.cols>span .price {
   position: relative;
   margin-top: 8em;
 }
 
-button{
+button {
   margin-top: 2rem;
   padding: 8px;
   background-color: black;
@@ -134,7 +137,7 @@ button:hover {
 .cols_image {
   position: relative;
   width: 50%;
-  min-height: 500px;  
+  min-height: 500px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -143,30 +146,75 @@ button:hover {
 .shoes {
   position: relative;
   left: -100px;
-  height: 300px; 
-  width: 300px;  
+  height: 300px;
+  width: 300px;
 }
 
 .cols_image {
   position: absolute;
-  height: 80%;  
-  width: auto;    
+  height: 80%;
+  width: auto;
   object-fit: contain;
   transform: scale(1) rotate(-20deg);
 
 }
 
-.cols_image .element{
+.cols_image .element {
   position: absolute;
   background: url(justdoit.png);
-  background-size: cover ;
+  background-size: cover;
   height: inherit;
   width: 35em;
   scale: 1.2;
-  filter: invert(1) ;
+  filter: invert(1);
   opacity: 0.3;
   top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
 
+}
+
+/* Legacy Mode */
+
+#page1 {
+  background: radial-gradient(142% 91% at 152% 84%, #1b4e3eff 0%, #070415FF 100%);
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+#legacy {
+  position: relative;
+  width: 100%;
+  height: 90%;
+  max-width: 2000px; /* Prevents excessive width */
+  max-height: 1000px;  /* Keeps everything contained */
+  border: 2px wheat solid;
+}
+
+.rookie {
+  position: absolute;
+  width: 350px; /* Adjust size as needed */
+  height: auto;
+  object-fit: contain;
+  border: 2px white solid;
+  border-radius: 20px;
+  
+  top: 60px; /* Moves it down from the top */
+  left: 80px; /* Moves it right from the left */
+}
+
+.rookie2 {
+  position: absolute;
+  width: 350px; /* Adjust size as needed */
+  height: auto;
+  object-fit: contain;
+  border: 2px white solid;
+  border-radius: 20px;
+  
+  bottom: 80px;
+  right: 80px;
 }
