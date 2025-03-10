@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    color: white;
+}
+
+#page{
+    background: radial-gradient(142% 91% at 83% 7%, #041313FF 1%,#FF000000 99% );
+    background: radial-gradient(142% 91% at 152% 84%, #1b4e3eff 0%, #070415FF 100% );
+    height: 100vh;
+  }
+
+#page > .container{
+    position: relative;
+    width: 100%;
+    min-height: 100%;
+    padding: 1rem 5em;
+    overflow: hidden;
+  }
+
+.container > nav{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    line-height: 100px;
+    z-index: 1111;
+}
+
+nav > .logo{
+    height: 100%;
+}
+
+.logo > .image{
+  height: inherit;
+  filter: invert(1);
+}
+
+ul{
+  display: flex;
+}
+
+ul > li{
+  list-style: none;
+  margin: 0 20px;
+  display: block;
+  text-decoration: none;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  text-wrap: nowrap;
+}
+
+ul > li:hover, .options > i:hover {
+  color: rgba(92, 243, 192, 0.626);
+  cursor: pointer;
+}
+
+.options{
+ font-size: 1.5rem;
+
+}
+
+.options > i{
+  margin: 0 10px;
+}
+
+.wrapper{
+  position: relative;
+  height: inherit;
+  width: 100%;
+  display: flex;
+  padding: 2em;
+}
+
+.wrapper > .cols{
+  width : 50%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.wrapper > .cols  title{
+  font-size: 6em;
+  font-weight: 900;
+  text-wrap: nowrap;
+}
+
+.wrapper > .cols .desc{
+  margin-top: 0.5em;
+  font-size: 1.1rem;
+  font-weight: 300;
+  max-width: 35vw;
+
+}
+
+.wrapper > .cols .desc:hover{
+  color: rgba(92, 243, 192, 0.626);
+  cursor: pointer;
+}
+
+span {
+  display: block;
+  font-size: 3em;
+
+}
+
+.cols > span .price{
+  position: relative;
+  margin-top: 8em;
+}
+
+button{
+  margin-top: 2rem;
+  padding: 8px;
+  background-color: black;
+  border: 2px solid rgba(92, 243, 192, 0.626);
+  border-radius: 20px;
+}
+
+button:hover {
+
+  background-color: rgba(92, 243, 192, 0.626);
+  border: 2px solid white;
+  border-radius: 20px;
+}
+
+.cols_image {
+  position: relative;
+  width: 50%;
+  min-height: 500px;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.shoes {
+  position: relative;
+  left: -100px;
+  height: 300px; 
+  width: 300px;  
+}
+
+.cols_image {
+  position: absolute;
+  height: 80%;  
+  width: auto;    
+  object-fit: contain;
+  transform: scale(1) rotate(-20deg);
+
+}
+
+.cols_image .element{
+  position: absolute;
+  background: url(justdoit.png);
+  background-size: cover ;
+  height: inherit;
+  width: 35em;
+  scale: 1.2;
+  filter: invert(1) ;
+  opacity: 0.3;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
