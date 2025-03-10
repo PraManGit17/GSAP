@@ -1,0 +1,48 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+body{
+  background-color: black;
+}
+
+
+#box{
+  height: 200px;
+  width: 200px;
+  background-color: crimson;
+}
+
+
+#box1{
+  height: 200px;
+  width: 200px;
+  background-color: rgb(88, 185, 254);
+}
+
+#box2{
+  height: 200px;
+  width: 200px;
+  background-color: rgb(176, 12, 94);
+}
+
+#nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  padding: 30px 50px;
+}
+#nav2{
+  display: flex;
+  gap: 50px;
+}
