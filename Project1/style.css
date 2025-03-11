@@ -183,7 +183,7 @@ button:hover {
 
 /* Legacy Mode */
 
-#page1 {
+  #page1 {
   height: 100vh;
   width: 100%;
   display: flex;
@@ -211,29 +211,30 @@ button:hover {
   justify-content: center;
   align-items: center;
   gap: 40px;
-  flex-wrap: wrap;  /* Prevents overflow */
+  flex-wrap: wrap; 
   max-width: 100%;
   padding: 20px;
   border: 2px white;
 }
 
 .left-container {
-  border: 3px white solid;
+
   height: 400px;
   width: 400px;
   position: absolute;
-  right: 200px;
+  right: 150px;
  
 }
 
 .leg1{
   display: flex;
   flex-direction: column;
+
 }
 
 .showcase > hr {
   position: absolute;
-  top: 0;
+  top: 10px;
   bottom: 0;
   width: 2px;
   background-color: white;
@@ -244,8 +245,7 @@ button:hover {
   height: 200px;
   width: 300px;
   position: absolute;
-  left: 300px;
-  bottom: 50px
+  left: 150px;
 
 }
 
@@ -253,6 +253,53 @@ button:hover {
   display: flex;
   flex-direction: column;
 } 
+
+.leg1 img {
+  width: 350px;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0px 0px 35px rgba(234, 196, 6, 0.8); /* Red glow */
+  transition: transform 0.3s ease-in-out;
+}
+
+.leg1 img:hover {
+  transform: scale(1.05);
+}
+
+.leg2 img {
+  margin-top: 20px;
+  width: 350px;
+  height: auto;
+  border-radius: 15px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.leg2 img:hover {
+  transform: scale(1.05);
+}
+
+
+
+.leg1 p {
+  margin-top: 15px;
+  font-size: 20px;
+  text-align: center;
+  line-height: 1.6;
+  max-width: 300px;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+}
+
+.leg2 p {
+  margin-bottom: 45px;
+  font-size: 2.2rem;
+  text-align: start;
+  line-height: 1.6;
+  max-width: 300px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+}
 
 #page2 {
 
@@ -279,4 +326,4 @@ button:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
+} 
