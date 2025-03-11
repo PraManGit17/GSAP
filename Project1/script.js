@@ -26,3 +26,101 @@ function prevImage() {
     changeImage(false);
 }
 
+// gsap.from("#hr", {
+//     height: "0px",  // Start from 0 height
+//     duration: 1.5,  // Animation duration
+//     ease: "power2.out"  // Smooth easing effect
+//   });
+  
+
+//   gsap.from(".left-container", {
+//     x: -200,  // Moves left initially
+//     opacity: 0,
+//     duration: 1.5,
+//     ease: "power2.out"
+//   });
+
+//   gsap.from(".right-container", {
+//     x: 200,  // Moves right initially
+//     opacity: 0,
+//     duration: 1.5,
+//     ease: "power2.out"
+//   });
+
+// gsap.from("#hr", {
+//     height: "0px",
+//     duration: 1.5,
+//     ease: "power2.out",
+//     scrollTrigger: {
+//       trigger: "#hr",
+//       start: "top 50%", 
+//     }
+//   });
+
+//   gsap.from(".left-container", {
+//     x: -200,
+//     opacity: 0,
+//     duration: 1.5,
+//     ease: "power2.out",
+//     scrollTrigger: {
+//       trigger: ".left-container",
+//       start: "top 45%",
+//       markers: true
+//     }
+//   });
+
+//   gsap.from(".right-container", {
+//     x: 200,
+//     opacity: 0,
+//     duration: 1.5,
+//     ease: "power2.out",
+//     scrollTrigger: {
+//       trigger: ".right-container",
+//       start: "top 85%",
+//     }
+//   });
+
+
+
+
+gsap.from(
+    "#hr",
+    {
+      height: "0px", // Change this to the final height you want
+      ease: "none",
+      scrollTrigger: {
+        trigger: "#hr",
+        start: "top 80%",  // When 80% of viewport reaches hr
+        end: "top 20%",   // When hr reaches 20% of viewport
+        scrub: true,  // Makes the animation sync with scroll
+      }
+    }
+  );
+
+  gsap.utils.toArray(".left-container").forEach((left) => {
+    gsap.from(left, {
+      x: -200,
+      opacity: 0,
+      duration: 1.5,
+      ease: "power2.out",
+      scrollTrigger: {
+        trigger: left,
+        start: "top 45%",
+        scrub: true
+      }
+    });
+  });
+
+  gsap.utils.toArray(".right-container").forEach((right) => {
+    gsap.from(right, {
+      x: 200,
+      opacity: 0,
+      duration: 1.5,
+      ease: "power2.out",
+      scrollTrigger: {
+        trigger: right,
+        start: "top 85%",
+        scrub: true
+      }
+    });
+  });
