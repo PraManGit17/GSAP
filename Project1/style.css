@@ -164,22 +164,10 @@ button:hover {
   object-fit: contain;
   transform: scale(1) rotate(-20deg);
 
-}
+} 
 
-.cols_image .element {
-  position: absolute;
-  background: url(justdoit.png);
-  background-size: cover;
-  height: inherit;
-  width: 35em;
-  scale: 1.2;
-  filter: invert(1);
-  opacity: 0.3;
-  top: 60%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 
-}
+
 
 /* Legacy Mode */
 
@@ -271,6 +259,7 @@ button:hover {
   width: 350px;
   height: auto;
   border-radius: 15px;
+  box-shadow: 0px 0px 35px rgba(234, 196, 6, 0.8); /* Red glow */
   transition: transform 0.3s ease-in-out;
 }
 
