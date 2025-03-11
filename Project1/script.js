@@ -1,3 +1,9 @@
+
+
+
+
+
+
 const images = ["./pics/nike1.png", "./pics/nike2.png", "./pics/nike3.png"];
 const titles = [
     "Air Jordan 1 'Black Toe Reimagined'",

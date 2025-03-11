@@ -18,6 +18,8 @@ html, body{
   background: radial-gradient(142% 91% at 152% 84%, #1b4e3eff 0%, #070415FF 100%);
 }
 
+
+
 #page {
   background: radial-gradient(142% 91% at 83% 7%, #041313FF 1%, #FF000000 99%);
   background: radial-gradient(142% 91% at 152% 84%, #1b4e3eff 0%, #070415FF 100%);
@@ -314,9 +316,11 @@ button:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 150px;
 } 
 
 .footer {
+  margin-top: 130px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -326,11 +330,10 @@ button:hover {
   color: white;
   font-size: 16px;
   position: relative;
-  bottom: 0;
   height: 100px;
   width: 100%;
   border: 2px solid white;
-  margin-top: 220px;
+
 }
 
 .social-links a {
